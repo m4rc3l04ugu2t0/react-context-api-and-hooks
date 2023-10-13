@@ -1,8 +1,8 @@
 import * as actionsTypes from '/react-context-api-and-hooks/src/contexts/CounterContext/actionTypes.js'
 import { initialState } from '/react-context-api-and-hooks/src/contexts/CounterContext/CounterContextProvider.js'
 
-
 export const reducer = (state, action) => {
+  console.log('reducer')
   
   switch (action.type) {
     case actionsTypes.INCREASE:
