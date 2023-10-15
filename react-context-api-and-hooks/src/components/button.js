@@ -1,7 +1,12 @@
 import React from 'react'
 
-export const Button = ({ children, onButoonClick }) => {
+export const Button = ({ children, onButoonClick, disabled = false }) => {
   return (
-    <button style={{ fontSize: '30px' }} onClick={ onButoonClick }>{ children }</button>
+    <button 
+      style={{ fontSize: '30px' }}
+      onClick={ onButoonClick }
+      disabled={ disabled }>
+        { children }
+    </button>
   )
 }
