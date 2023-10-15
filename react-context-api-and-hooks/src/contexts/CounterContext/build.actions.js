@@ -3,7 +3,6 @@ import * as actionsTypes from '/react-context-api-and-hooks/src/contexts/Counter
 const asyncIncreaseFn = async (dispatch) => {
   dispatch({ type: actionsTypes.ASYNC_INCREASE_START })
   
-  
   return await new Promise(response => {
     setTimeout(() => {
       dispatch({ type: actionsTypes.ASYNC_INCREASE_END })
@@ -34,4 +33,3 @@ export const buildActions = (dispatch) => {
     asyncError: () => asyncErrorFn(dispatch)
   }
 }
-
